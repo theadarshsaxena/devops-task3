@@ -1,3 +1,6 @@
+pipeline{
+  agent any
+
 job("JOB1a"){
   description("Automatically download the code from github. Create Dynamic image from dockerfile and upload it to docker hub.")
   scm{
@@ -68,4 +71,5 @@ else
     exit 1
 fi''')
   }
+}
 }
